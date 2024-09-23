@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        nav a {
+            transition: color 0.3s, border-color 0.3s;
+        }
+
+        nav a:hover {
+            color: #63b3ed;
+            border-bottom-color: #63b3ed;
+        }
+
+        .project-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer-link:hover {
+            color: #63b3ed;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <nav class="bg-gray-700 shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold text-white">My Portfolio</div>
+            <div>
+                <a href="Homepage.html" class="text-white mx-4">Home</a>
+                <a href="Personalprofile.html" class="text-white mx-4">Personal Profile</a>
+                <a href="Gallery.html" class="text-white mx-4">Gallery</a>
+                <a href="Goals.html" class="text-white mx-4">Goals</a>
+                <a href="Projects.html" class="text-white mx-4 border-b-2 border-blue-400">Projects</a>
+                <a href="Skills.html" class="text-white mx-4">Skills & Interests</a>
+                <a href="Contact.html" class="text-white mx-4">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto py-16 px-6">
+        <h1 class="text-3xl font-bold text-center mb-10">Projects</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="project-card bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img src="https://lh6.googleusercontent.com/proxy/z2_nqcK_kvXW5M9wdQ4Z0D8KiSnTQ_BxKitfA0ofQz0LGpd8S1ZvheDqiO5tvC9NyIiV-UVNoJzG55zHE5wcW9Smh0j8Va5i0d0o_RQ" alt="Dog Breed Classifier Screenshot" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2 text-white text-center">PawPrint AI Canine Classifier</h2>
+                    <p class="text-lg text-white mb-4" style="font-family: 'Lato', sans-serif;">An AI-powered dog breed recognition system developed using Convolutional Neural Networks (CNNs). It helps accurately identify dog breeds from images using Machine Learning techniques.</p>
+                    <p class="text-gray-400 mb-2"><strong>Technologies Used:</strong> Python, TensorFlow, Keras, OpenCV</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/maheera1/DogBreedClassification" class="text-blue-400 hover:underline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJZKmUmQhBNDxJwOHLEPK_5TbFZFH3-qrp0w&s" alt="Cafe Management System Screenshot" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2 text-white text-center">Cafe Management System</h2>
+                    <p class="text-lg text-white mb-4" style="font-family: 'Lato', sans-serif;">A comprehensive system developed to manage orders, inventory, staff, and customer relationships for a café. Includes features like payment processing and financial management.</p>
+                    <p class="text-gray-400 mb-2"><strong>Technologies Used:</strong> ASP.NET, SQL Server, C#</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/maheera1/CafeManagementSystem" class="text-blue-400 hover:underline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR44X1OznMfHDgwnaUhh7j7NEHdftSx84Cstg&s" alt="Blog Website Screenshot" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2 text-white text-center">Blog Website</h2>
+                    <p class="text-lg text-white mb-4" style="font-family: 'Lato', sans-serif;">A website for posting blogs with basic functionalities, including the ability to follow other profiles. Developed using the MERN stack.</p>
+                    <p class="text-gray-400 mb-2"><strong>Technologies Used:</strong> MongoDB, Express, React, Node.js</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/maheera1/Web-development" class="text-blue-400 hover:underline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maheera Ashfaq. All Rights Reserved.</p>
+            <div class="mt-2">
+                <a href="https://www.linkedin.com/in/maheeraashfaq/" class="text-gray-400 mx-2 footer-link" aria-label="LinkedIn Profile">LinkedIn</a>
+                <a href="https://github.com/maheera1" class="text-gray-400 mx-2 footer-link" aria-label="GitHub Profile">GitHub</a>
+                <a href="https://www.instagram.com/m.aheera_/?hl=en" class="text-gray-400 mx-2 footer-link" aria-label="Instagram Profile">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

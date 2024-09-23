@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        nav a {
+            transition: color 0.3s, border-color 0.3s;
+        }
+
+        nav a:hover {
+            color: #63b3ed; /* Change to your preferred hover color */
+            border-bottom-color: #63b3ed; /* Change to match hover color */
+        }
+
+        .profile-info {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .profile-info:hover {
+            transform: scale(1.03);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-picture {
+            transition: filter 0.3s;
+        }
+
+        .profile-picture:hover img {
+            filter: blur(2px); /* Apply blur effect on hover */
+        }
+
+        .social-icon:hover img {
+            filter: brightness(0) invert(1); /* Change color on hover */
+        }
+
+        .footer-link:hover {
+            color: #63b3ed; /* Change to your preferred hover color */
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack items in a column on small screens */
+            }
+
+            .profile-info {
+                margin-bottom: 16px; /* Add space between stacked items */
+            }
+
+            .profile-picture {
+                width: 80%; /* Adjust the width of the profile picture div */
+                max-width: 300px; /* Optional: limit the maximum width */
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-700 shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold text-white">My Portfolio</div>
+            <div>
+                <a href="Homepage.html" class="text-white mx-4">Home</a>
+                <a href="Personalprofile.html" class="text-white mx-4 border-b-2 border-blue-400">Personal Profile</a>
+                <a href="Gallery.html" class="text-white mx-4">Gallery</a>
+                <a href="Goals.html" class="text-white mx-4">Goals</a>
+                <a href="Projects.html" class="text-white mx-4">Projects</a>
+                <a href="Skills.html" class="text-white mx-4">Skills & Interests</a>
+                <a href="Contact.html" class="text-white mx-4">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <div class="container mx-auto py-16 px-6 flex flex-col md:flex-row items-center justify-between">
+        <!-- Profile Info -->
+        <div class="profile-info bg-gradient-to-r from-blue-500 to-gray-800 rounded-lg p-6 shadow-lg md:w-2/3 mb-8 md:mb-0 flex flex-col justify-between">
+            <h1 class="text-4xl font-bold text-white mb-4">Hi, I'm Maheera Ashfaq</h1>
+            <p class="text-lg text-white mb-4" style="font-family: 'Lato', sans-serif;">
+                I'm a Software Engineering student from the National University of Computing and Emerging Sciences,
+                Islamabad. With experience in software design, business development, and project management, I’ve worked
+                in roles such as a Business Development Manager at InventioSoft and as a Graphic Designer at Share and
+                Care Foundation.
+            </p>
+            <div class="flex items-center space-x-4">
+                <a href="https://www.linkedin.com/in/maheeraashfaq/" target="_blank" class="social-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="w-8" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/maheera1" target="_blank" class="social-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="w-8" alt="GitHub">
+                </a>
+                <a href="https://www.instagram.com/m.aheera_/?hl=en" target="_blank" class="social-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="w-8" alt="Instagram">
+                </a>
+                <a href="mailto:maheeraashfaq648@gmail.com" class="social-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="w-8" alt="Email">
+                </a>
+            </div>
+        </div>
+
+        <!-- Profile Picture -->
+        <div class="profile-picture md:w-1/2 flex justify-center">
+            <img src="WhatsApp Image 2024-09-14 at 14.39.54_411205e1.jpg" alt="Profile Picture"
+                class="rounded-lg shadow-lg">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maheera Ashfaq. All Rights Reserved.</p>
+            <div class="mt-2">
+                <a href="https://www.linkedin.com/in/maheeraashfaq/" class="text-gray-400 mx-2 footer-link" aria-label="LinkedIn Profile">LinkedIn</a>
+                <a href="https://github.com/maheera1" class="text-gray-400 mx-2 footer-link" aria-label="GitHub Profile">GitHub</a>
+                <a href="https://www.instagram.com/m.aheera_/?hl=en" class="text-gray-400 mx-2 footer-link" aria-label="Instagram Profile">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
